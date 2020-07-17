@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hoyeon Kim's Portfolio</title>
-    <meta name="description" content="Portfolio for software enginner Hoyeon" />
+    <meta
+      name="description"
+      content="Portfolio For Full Stack Web Developer Hoyeon"
+    />
     <meta name="author" content="Hoyeon" />
     <link rel="icon" type="image/png" href="/imgs/favicon.png" />
     <!-- font awesome link -->
@@ -16,8 +19,41 @@
       href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <!-- NavBar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <img class="navbar__icon" src="/imgs/favicon.png" />
+        <a href="#">Hoyeon Kim</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item">Home</li>
+        <li class="navbar__menu__item">About</li>
+        <li class="navbar__menu__item">Skills</li>
+        <li class="navbar__menu__item">My work</li>
+        <li class="navbar__menu__item">Testimonial</li>
+        <li class="navbar__menu__item">Contact</li>
+      </ul>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+        <img src="imgs/profile.jpg" alt="Hoyeon's profile photo" class="home__avatar">
+        <h1 class="home__title">Hi everyone!</h1>
+        <h2 class="home__description">A Full-Stack Web Developer currently residing in Irvine, California</h2>
+        <button class="home__contact">Contact Me</button>
+    </section>
+    <!-- About -->
+    <section id="about"></section>
+    <!-- Skills -->
+    <section id="skills"></section>
+    <!-- Work -->
+    <section id="work"></section>
+    <!-- Testimonials -->
+    <section id="testimonials"></section>
+    <!-- Contact -->
+    <section id="contact"></section>
+  </body>
 </html>
