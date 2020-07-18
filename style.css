@@ -96,12 +96,21 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-mint);
-  color: var(--color-white);
   padding: 16px;
+  background-color: transparent;
+  color: var(--color-white);
+  transition: all var(--animation--duration) ease-in-out;
+  z-index: 1;
+}
+
+#navbar.navbar--dark {
+  padding: 8px;
+  background-color: var(--color-mint);
 }
 
 .navbar__menu {
@@ -145,8 +154,9 @@ p {
 
 /* Home */
 #home {
-  background: url('/imgs/profile_background.png');
+  background: url('./imgs/profile_background.png');
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
