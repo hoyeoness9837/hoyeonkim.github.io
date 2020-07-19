@@ -4,7 +4,7 @@ const navbarHeight = navBar.getBoundingClientRect().height;
 
 //make navbar solid as user scroll down.
 document.addEventListener('scroll', () => {
-  if (window.screenY > navbarHeight) {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
     navBar.classList.add('navbar--dark');
   } else {
     navBar.classList.remove('navbar--dark');
@@ -32,6 +32,21 @@ const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+//show arrow up button when scrolling down.
+const arrowUp = document.getElementById('gotoTopBtn');
+document.addEventListener('scroll', () => {
+  if (window.scrollY > homeHeight / 2) {
+    arrowUp.classList.add('visible');
+  } else {
+    arrowUp.classList.remove('visible');
+  }
+});
+
+// When the user clicks on the button, scroll to the top
+arrowUp.addEventListener('click', () => {
+  scrollIntoViews('#home');
 });
 
 const scrollIntoViews = (section) => {
