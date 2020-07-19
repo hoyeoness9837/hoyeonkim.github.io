@@ -409,7 +409,7 @@ p {
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 
 .project:hover .project__description {
@@ -422,9 +422,9 @@ p {
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 100px;
   height: 2px;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
@@ -520,13 +520,18 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
-  .navbar__toggle-btn {
-    display: block;
-  }
-
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-mint);
+  }
+
+  #navbar.navbar--dark {
+    padding: 16px;
+  }
+
+  .navbar__toggle-btn {
+    display: block;
   }
 
   .navbar__menu {
@@ -534,6 +539,10 @@ p {
     text-align: center;
     width: 100%;
     display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
   }
 
   .about__majors {
