@@ -37,7 +37,12 @@
 
 /* Universial tags */
 * {
+  font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Oleo Script', cursive;
 }
 
 body {
@@ -151,7 +156,7 @@ p {
 
 /* Home */
 #home {
-  background: url('./imgs/profile_background.png');
+  background: center/cover no-repeat url('./imgs/profile_background.png');
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -177,7 +182,6 @@ p {
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
-  /* transition: all var(--animation--duration) ease-in; */
 }
 
 .home__contact:hover {
@@ -193,11 +197,22 @@ p {
 }
 
 .section__container {
+  position: relative;
   max-width: 1200px;
   margin: auto;
 }
 
 /* About */
+#about {
+  background-image: 
+  url('./imgs/aboutme/background-sharing.png'),
+  url('./imgs/aboutme/background-chemistry.png');
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 40%, 40%;
+  z-index: 0;
+}
+
 .about__majors {
   display: flex;
   justify-content: space-between;
@@ -437,7 +452,6 @@ p {
 /* Testimonial */
 #testimonials {
   background-color: var(--color-light-white);
-  position: relative;
 }
 
 .testimonials {
