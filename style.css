@@ -194,7 +194,6 @@ p {
 
 .section__container {
   max-width: 1200px;
-  /* padding: 16px; */
   margin: auto;
 }
 
@@ -239,9 +238,19 @@ p {
   font-size: var(--font-small);
 }
 
+.about__jobs {
+  display: flex;
+  flex-direction: column;
+}
+
 .job {
   display: flex;
   align-items: center;
+  padding: 8px;
+}
+
+.job__logo {
+  border-radius: var(--size-border-radius);
 }
 
 .job__description {
@@ -263,7 +272,6 @@ p {
 }
 
 /* Skills */
-
 #skills {
   background-color: var(--color-yellow);
 }
@@ -427,9 +435,9 @@ p {
 }
 
 /* Testimonial */
-
 #testimonials {
   background-color: var(--color-light-white);
+  position: relative;
 }
 
 .testimonials {
@@ -443,8 +451,9 @@ p {
 }
 
 .testimonial__avater {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
+  border: 2px solid var(--color-pink);
   border-radius: 50%;
 }
 
@@ -460,6 +469,12 @@ p {
   padding: 18px;
   background-color: var(--color-white);
   border-radius: var(--size-border-radius);
+}
+
+.testimonial__quote {
+  position: absolute;
+  left: 55px;
+  top: -8px;
 }
 
 .testimonial__speech-bubble p {
@@ -571,6 +586,11 @@ p {
     font-size: 40px;
   }
 
+  .job__logo {
+    width: 60px;
+    border-radius: var(--size-border-radius);
+  }
+
   .skillset {
     flex-direction: column;
   }
@@ -596,9 +616,13 @@ p {
     flex-direction: column-reverse;
   }
 
+  .testimonial__quote {
+    width: 50px;
+  }
+
   .testimonial__avater {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
 
   .testimonial__avater:nth-child(odd),
