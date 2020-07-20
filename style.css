@@ -634,6 +634,8 @@ p {
   }
 
   .testimonial__quote {
+    left: 4px;
+    top: -65px;
     width: 50px;
   }
 
