@@ -204,9 +204,8 @@ p {
 
 /* About */
 #about {
-  background-image: 
-  url('./imgs/aboutme/background-sharing.png'),
-  url('./imgs/aboutme/background-chemistry.png');
+  background-image: url('./imgs/aboutme/background-sharing.png'),
+    url('./imgs/aboutme/background-chemistry.png');
   background-position: top left, bottom right;
   background-repeat: no-repeat;
   background-size: 40%, 40%;
@@ -603,6 +602,10 @@ p {
   .job__logo {
     width: 60px;
     border-radius: var(--size-border-radius);
+  }
+
+  #about {
+    background-image: none;
   }
 
   .skillset {
