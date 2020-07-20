@@ -6,7 +6,8 @@ This site is my personal portfoilo page. It showcases myself and projects I've p
 
 - Go to the following deployed and Check out my porfolio, If there is any questions about me, please don't hesitate to contact.
 
-  - Click this link, [https://hoyeoness9837.github.io/hoyeonkim.github.io](https://hoyeoness9837.github.io/hoyeonkim.github.io)
+  - Click this link below, 
+  - [https://hoyeoness9837.github.io/hoyeonkim.github.io](https://hoyeoness9837.github.io/hoyeonkim.github.io)
 
 - or you can also clone via CLI https://github.com/hoyeoness9837/hoyeonkim.github.io.git and View in browser at http://localhost:3000.
 
