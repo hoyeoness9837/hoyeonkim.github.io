@@ -208,7 +208,7 @@ p {
     url('./imgs/aboutme/background-chemistry.png');
   background-position: top left, bottom right;
   background-repeat: no-repeat;
-  background-size: 40%, 40%;
+  background-size: 30%, 30%;
   z-index: 0;
 }
 

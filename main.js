@@ -1,6 +1,7 @@
 'use strict';
 const navBar = document.querySelector('#navbar');
 const navbarHeight = navBar.getBoundingClientRect().height;
+console.log('navbarhight:', navbarHeight);
 
 //make navbar solid as user scroll down.
 document.addEventListener('scroll', () => {
@@ -19,18 +20,15 @@ navbarMenu.addEventListener('click', (event) => {
   if (link === null || undefined) {
     return;
   }
-  navbarMenu.classList.remove('open')
+  navbarMenu.classList.remove('open');
   scrollIntoViews(link);
 });
 
 //Handle Navbar hanburger dropdown
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
-navbarToggleBtn.addEventListener('click',()=>{
-  navbarMenu.classList.toggle('open')
-})
-
-
-
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});
 
 //handle clicking contact me btn in home
 document.querySelector('.home__contact').addEventListener('click', () => {
