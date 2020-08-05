@@ -1,7 +1,6 @@
 'use strict';
 const navBar = document.querySelector('#navbar');
 const navbarHeight = navBar.getBoundingClientRect().height;
-console.log('navbarhight:', navbarHeight);
 
 //make navbar solid as user scroll down.
 document.addEventListener('scroll', () => {
