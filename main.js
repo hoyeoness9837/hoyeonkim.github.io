@@ -34,6 +34,23 @@ document.querySelector('.home__contact').addEventListener('click', () => {
   scrollIntoViews('#contact');
 });
 
+//home__avatar slideshow
+let myIndex = 0;
+slideshow();
+
+function slideshow() {
+  let i;
+  // array of img that are changing "home__avatar"
+  let mySlides = document.getElementsByClassName("home__avatar"); 
+  for (i = 0; i < mySlides.length; i++) {
+    mySlides[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > mySlides.length) {myIndex = 1}    
+  mySlides[myIndex-1].style.display = "inline";  
+  setTimeout(slideshow, 2000); 
+}
+
 //make home gradually fade out as user scroll down.
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
@@ -89,6 +106,8 @@ workBtnContainer.addEventListener('click', (event) => {
   }, 300);
 });
 
+
+//back to top scroll
 const scrollIntoViews = (section) => {
   const scrollTo = document.querySelector(section);
   scrollTo.scrollIntoView({ behavior: 'smooth' });
