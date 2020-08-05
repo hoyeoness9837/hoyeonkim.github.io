@@ -25,8 +25,8 @@
 
   /* Font weight */
   --weight-bold: 700;
-  --weight-semi-bold: 600;
-  --weight-regular: 400;
+  --weight-semi-bold: 500;
+  --weight-regular: 300;
 
   /* Size */
   --size-border-radius: 4px;
@@ -37,7 +37,7 @@
 
 /* Universial tags */
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   box-sizing: border-box;
 }
 
@@ -66,6 +66,15 @@ button {
   border: none;
   outline: none;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-light-grey); 
+  border-radius: var(--size-border-radius);
+}
+
 
 /* Typography */
 h1 {
@@ -361,7 +370,7 @@ p {
 
 .category__btn:hover .category__count {
   opacity: 1;
-  top: 4px;
+  top: 8px;
 }
 
 .category__count {
@@ -417,6 +426,8 @@ p {
   position: absolute;
   flex-direction: column;
   justify-content: center;
+  overflow-y: scroll;
+
   background-color: var(--color-black);
   width: 100%;
   height: 100%;
@@ -567,9 +578,8 @@ p {
 
   .navbar__toggle-btn {
     display: block;
-    top: 16px;
+    top: 5px;
     right: 16px;
-    font-size: var(--font-medium);
   }
 
   .navbar__menu {
