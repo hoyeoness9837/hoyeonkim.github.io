@@ -41,14 +41,16 @@ slideshow();
 function slideshow() {
   let i;
   // array of img that are changing "home__avatar"
-  let mySlides = document.getElementsByClassName("home__avatar"); 
+  let mySlides = document.getElementsByClassName('home__avatar');
   for (i = 0; i < mySlides.length; i++) {
-    mySlides[i].style.display = "none";  
+    mySlides[i].style.display = 'none';
   }
   myIndex++;
-  if (myIndex > mySlides.length) {myIndex = 1}    
-  mySlides[myIndex-1].style.display = "inline";  
-  setTimeout(slideshow, 2000); 
+  if (myIndex > mySlides.length) {
+    myIndex = 1;
+  }
+  mySlides[myIndex - 1].style.display = 'inline';
+  setTimeout(slideshow, 2000);
 }
 
 //make home gradually fade out as user scroll down.
@@ -105,7 +107,6 @@ workBtnContainer.addEventListener('click', (event) => {
     projectContainer.classList.remove('anim-out');
   }, 300);
 });
-
 
 //back to top scroll
 const scrollIntoViews = (section) => {

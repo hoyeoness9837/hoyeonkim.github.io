@@ -471,6 +471,7 @@ p {
 .testimonial {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 32px 0;
 }
 
@@ -515,7 +516,8 @@ p {
 }
 
 .contact__title,
-.contact__email {
+.contact__email,
+.contact__mobile {
   color: var(--color-white);
 }
 
@@ -622,10 +624,6 @@ p {
     flex-direction: column;
   }
 
-  .skill__badges {
-    display: block;
-  }
-
   .category__btn {
     padding: 10px;
     margin-bottom: 8px;
@@ -633,6 +631,8 @@ p {
   }
 
   .project {
+    width: 100px;
+    height: 125px;
     flex-grow: 1;
   }
 
