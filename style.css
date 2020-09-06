@@ -183,7 +183,8 @@ p {
   color: var(--color-white);
 }
 
-.home__contact {
+.home__contact,
+.home__resume {
   color: var(--color-white);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
@@ -569,6 +570,7 @@ p {
 
   #navbar {
     padding: 6px;
+    height: 48px;
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--color-mint);
