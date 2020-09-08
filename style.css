@@ -183,7 +183,8 @@ p {
   color: var(--color-white);
 }
 
-.home__contact {
+.home__contact,
+.home__resume {
   color: var(--color-white);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
@@ -319,7 +320,7 @@ p {
   justify-content: space-between;
 }
 
-.skill__bar {
+/* .skill__bar {
   width: 100%;
   height: 3px;
   background-color: var(--color-grey);
@@ -328,16 +329,16 @@ p {
 .skill__value {
   height: 3px;
   background-color: var(--color-orange);
-}
+} */
 
 .skillset__left {
   padding: 20px 40px;
-  flex-basis: 60%;
+  flex-basis: 50%;
   background-color: var(--color-dark-grey);
 }
 
 .skillset__right {
-  flex-basis: 40%;
+  flex-basis: 50%;
 }
 
 .tools {
@@ -569,6 +570,7 @@ p {
 
   #navbar {
     padding: 6px;
+    height: 48px;
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--color-mint);
