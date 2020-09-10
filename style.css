@@ -309,6 +309,7 @@ p {
 
 .skillset__title {
   color: var(--color-white);
+  text-decoration: underline;
 }
 
 .skill {
