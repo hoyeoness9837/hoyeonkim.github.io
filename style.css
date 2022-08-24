@@ -184,7 +184,7 @@ p {
   color: var(--color-white);
 }
 
-.home__contact,
+.home__translate, .home__contact,
 .home__resume {
   color: var(--color-white);
   font-size: var(--font-regular);
@@ -195,7 +195,7 @@ p {
   border-radius: var(--size-border-radius);
 }
 
-.home__contact:hover {
+.home__translate, .home__contact:hover, .home__resume:hover {
   background-color: var(--color-dark-mint);
 }
 
@@ -225,20 +225,21 @@ p {
 
 .about__majors {
   display: flex;
-  justify-content: space-between;
-  margin: 80px 0;
+  justify-content: space-evenly;
+  margin: 8px 0;
 }
 
 .major__icon {
   margin: auto;
-  width: 170px;
-  height: 170px;
-  line-height: 170px;
-  font-size: 70px;
+  width: 8rem;
+  height: 8rem;
+  line-height: 8rem;
+  font-size: 40px;
   color: var(--color-blue);
   border: 1px solid var(--color-blue);
   border-radius: 50%;
   margin-bottom: 16px;
+  background-color: floralwhite;
 }
 
 .major__icon i {
@@ -247,7 +248,7 @@ p {
 
 .major__icon :hover {
   color: var(--color-pink);
-  transform: rotate(-30deg) scale(1.1);
+  transform: rotate(1turn) scale(1.5);
 }
 
 .major__title,
@@ -310,14 +311,16 @@ p {
 
 .skillset__title {
   color: var(--color-white);
-  text-decoration: underline;
+  border: 1px solid var(--color-white);
+  border-radius: var(--size-circle-radius);
+  padding:2px;
 }
 
 .skill {
   margin-bottom: 32px;
 }
 
-.skill_description {
+/* .skill_description {
   display: flex;
   justify-content: space-between;
 }
@@ -326,7 +329,7 @@ p {
   padding: 4px;
   border: 1px solid var(--color-white);
   border-radius: var(--size-circle-radius);
-}
+} */
 
 /* .skill__bar {
   width: 100%;
@@ -553,6 +556,7 @@ p {
   background-color: var(--color-pink);
   width: 50px;
   height: 50px;
+  line-height: 50px;
   border-radius: 50%;
   z-index: 1;
   opacity: 0;
@@ -563,6 +567,14 @@ p {
 #gotoTopBtn.visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+#gotoTopBtn  i {
+  transition: all var(--animation--duration) ease-in;
+}
+
+#gotoTopBtn :hover {
+  transform: translateY(-18px) scale(1.2);
 }
 
 /* For below 768px screen width */
