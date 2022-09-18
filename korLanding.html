@@ -21,6 +21,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./bookCoverCss.css" />
     <script defer src="./main.js"></script>
   </head>
   <body>
@@ -283,8 +284,99 @@
     <!-- Either Project or Work -->
     <section id="work" class="section">
       <div class="section__container">
-        <h1>Projects</h1>
-        <h3>Personal(Practice-purpose) / Bootcamp</h3>
+        <h1>Main Projects</h1>
+        <div class="cover">
+          <div class="book">
+            <label for="page-1" class="book__page book__page--1">
+              <img
+                src="imgs/projects/project_googleBookSearch_macbook.png"
+                alt=""
+              />
+            </label>
+
+            <label for="page-2" class="book__page book__page--4">
+              <div class="page__content">
+                <h1 class="page__content-title">Development Story</h1>
+                <div class="page__content-blockquote">
+                  <p class="page__content-blockquote-text">
+                    내가 생각하는 나의 성격과 친구가 생각하는 나의 성격을
+                    비교함으로써 겉으로 보이는 나의 모습이 어떠한지 파악해볼 수
+                    있는 웹사이트입니다. 실제로 지인과 성격 검사를 서로 해주면서
+                    얻은 아이디어를 바탕으로 직접 개발하였습니다. 백 엔드
+                    개발자와 협업하는 과정에 관해 많이 배울 수 있었습니다.
+                    필요한 명세를 문서로 작성하여 소통하였고, 필요한 지식도 함께
+                    공유하며 학습할 수 있었습니다. UI & UX를 깊게 고민하며
+                    스스로 디자인하였고, 그 과정에서 canvas API 등을 활용하여
+                    복잡한 애니메이션들을 구현했습니다. 복수 페이지의 Next.js
+                    웹사이트를 만들면서 라우팅, CSR, SSR, SSG에 대한 개념을 더욱
+                    확실하게 숙지할 수 있었습니다. GA를 설치하여 트래픽을
+                    파악하고 사용자의 행동을 이벤트 단위로 분석하는 방법을 알게
+                    되었습니다.
+                  </p>
+                </div>
+              </div>
+            </label>
+
+            <!-- Resets the page -->
+            <input type="radio" name="page" id="page-1" />
+
+            <!-- Goes to the second page -->
+            <input type="radio" name="page" id="page-2" />
+            <label class="book__page book__page--2">
+              <div class="book__page-front">
+                <div class="page__content">
+                  <h1 class="page__content-book-title">Project Name</h1>
+                  <h2 class="page__content-author">
+                    2022.10(1인 개인프로젝트)
+                  </h2>
+
+                  <p class="page__content-credits">
+                    GitHub
+                    <span>link</span>
+                  </p>
+
+                  <p class="page__content-credits">
+                    URL
+                    <span>Link</span>
+                  </p>
+                </div>
+              </div>
+              <div class="book__page-back">
+                <div class="page__content">
+                  <h1 class="page__content-title">
+                    Key features & technology used
+                  </h1>
+                  <table class="page__content-table">
+                    <tr>
+                      <td align="left">주요기능</td>
+                      <td align="right">
+                        한번에 다 지우기,계획 취소, PDF 파일로 다운로드,Drag and
+                        Drop,
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left">Frontend</td>
+                      <td align="right">Next.js, Typescript, Sass</td>
+                    </tr>
+                    <tr>
+                      <td align="left">Backend</td>
+                      <td align="right">Node.js, Express.js</td>
+                    </tr>
+                    <tr>
+                      <td align="left">Database</td>
+                      <td align="right">MongdoDB, PostgreSQL</td>
+                    </tr>
+                    <tr>
+                      <td align="left">Deployment</td>
+                      <td align="right">Vercel, AWS, Heroku</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <h1>Small Projects</h1>
         <div class="work__categories">
           <button class="category__btn selected" data-filter="*">
             모두보기<span class="category__count">9</span>
@@ -299,6 +391,7 @@
             부트캠프<span class="category__count">3</span>
           </button>
         </div>
+
         <div class="work__projects">
           <a
             href="https://github.com/hoyeoness9837/googlebooksearch_react"

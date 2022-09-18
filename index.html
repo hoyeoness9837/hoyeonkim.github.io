@@ -21,6 +21,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./bookCoverCss.css" />
     <script defer src="./main.js"></script>
   </head>
   <body>
@@ -315,8 +316,88 @@
     <!-- Either Project or Work -->
     <section id="work" class="section">
       <div class="section__container">
-        <h1>Projects</h1>
-        <h3>Personal(Practice-purpose) / Bootcamp</h3>
+        <h1>Main Projects</h1>
+        <div class="cover">
+          <div class="book">
+            <label for="page-1" class="book__page book__page--1">
+              <img
+                src="imgs/projects/project_googleBookSearch_macbook.png"
+                alt=""
+              />
+            </label>
+
+            <label for="page-2" class="book__page book__page--4">
+              <div class="page__content">
+                <h1 class="page__content-title">Development Story</h1>
+                <div class="page__content-blockquote">
+                  <p class="page__content-blockquote-text">
+                    어떠어떠한 웹사이트입니다. 어떠한 아이디어를 바탕으로 직접
+                    개발하였습니다.
+                  </p>
+                </div>
+              </div>
+            </label>
+
+            <!-- Resets the page -->
+            <input type="radio" name="page" id="page-1" />
+
+            <!-- Goes to the second page -->
+            <input type="radio" name="page" id="page-2" />
+            <label class="book__page book__page--2">
+              <div class="book__page-front">
+                <div class="page__content">
+                  <h1 class="page__content-book-title">Project Name</h1>
+                  <h2 class="page__content-author">
+                    2022.10(1인 개인프로젝트)
+                  </h2>
+
+                  <p class="page__content-credits">
+                    GitHub
+                    <span>link</span>
+                  </p>
+
+                  <p class="page__content-credits">
+                    URL
+                    <span>Link</span>
+                  </p>
+                </div>
+              </div>
+              <div class="book__page-back">
+                <div class="page__content">
+                  <h1 class="page__content-title">
+                    Key features & technology used
+                  </h1>
+                  <table class="page__content-table">
+                    <tr>
+                      <td align="left">주요기능</td>
+                      <td align="right">
+                        한번에 다 지우기,계획 취소, PDF 파일로 다운로드,Drag and
+                        Drop
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left">Frontend</td>
+                      <td align="right">Next.js, Typescript, Sass</td>
+                    </tr>
+                    <tr>
+                      <td align="left">Backend</td>
+                      <td align="right">Node.js, Express.js</td>
+                    </tr>
+                    <tr>
+                      <td align="left">Database</td>
+                      <td align="right">MongdoDB, PostgreSQL</td>
+                    </tr>
+                    <tr>
+                      <td align="left">Deployment</td>
+                      <td align="right">Vercel, AWS, Heroku</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <h1>Small Projects</h1>
         <div class="work__categories">
           <button class="category__btn selected" data-filter="*">
             ALL<span class="category__count">9</span>
