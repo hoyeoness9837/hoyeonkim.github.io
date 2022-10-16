@@ -2,7 +2,7 @@
 
 This site is my personal portfoilo page. It showcases myself and projects I've practiced/built. There'll be more projects that i will be trying upload, that I wish help the world in someway, somehow and someday. Let's keep trying plugging away and enjoy coding!
 
-## Installation
+## Deployed Link
 
 - Go to the following deployed and Check out my porfolio, If there is any questions about me, please don't hesitate to contact me.
 
